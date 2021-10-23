@@ -56,6 +56,14 @@ h1, h2 {
 
 /* hero image*/
 
+#cover-text, #cover-text h2 {
+    color: #fff;
+    
+}
+
+
+
+
 #hero-outer {
     height:600px;
     width:100%;
@@ -79,6 +87,25 @@ h1, h2 {
     to{
         transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
 }
 /*club ethos styles*/
 
@@ -215,4 +242,49 @@ footer {
 
 #photos img {
     width:100%;
+}
+
+/* media queries*/
+/*for larger screens below 1200px*/
+
+@media screen and (max-width:1200px) {
+
+    #club-ethos{
+        width:65%;
+        height:1200px;
+        margin:0 auto;
+    }
+
+    #welcome {
+        padding:30px 0;
+        margin:0;
+    }
+
+    #left-about, #right-about {
+        width:100%;
+        float:left;
+        padding:0;
+        
+    }
+
+    #center-about {
+        clear:about;
+        width:100%;
+        float:left;
+        padding:0;
+    }
+    hr {
+        display: none;
+    }
+
+}/* for screens below 950px*/
+
+@media  and (max-width: 950px) {
+     #menu {
+        clear:left;
+        float:left;
+        margin-left:30px;
+        margin-bottom:20px;
+        line-height:25px;
+    }
 }
